@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cricket Scorer</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Cricket Scorer</h1>
+        <div id="match-creation">
+            <h2>Create Match</h2>
+            <input type="text" id="team1" placeholder="Team 1">
+            <input type="text" id="team2" placeholder="Team 2">
+            <button onclick="createMatch()">Create Match</button>
+        </div>
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+            <div id="score"></div>
+            <input type="number" id="runs" placeholder="Runs">
+            <input type="number" id="wickets" placeholder="Wickets">
+            <input type="number" id="overs" placeholder="Overs">
+            <button onclick="updateScore()">Update Score</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
